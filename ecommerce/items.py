@@ -6,7 +6,15 @@
 import scrapy
 
 
-class EcommerceItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+class BookItem(scrapy.Item):
+    title = scrapy.Field()
+    price = scrapy.Field()
+    rating =  scrapy.Field()
+    description = scrapy.Field()
+    UPC = scrapy.Field()
+    Product_type = scrapy.Field()
+    Price_excl_tax = scrapy.Field()
+    price_incl_tax = scrapy.Field()
+    Tax = scrapy.Field()
+    Availability = scrapy.Field()
+    number_of_review = scrapy.Field()
